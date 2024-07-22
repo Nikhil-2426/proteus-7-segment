@@ -1,0 +1,175 @@
+#include<LPC214X.h>
+void delay(unsigned int count);
+int main()
+{
+while(1)
+{
+	IODIR0|=(0x01<<1);
+	IODIR0|=(0x01<<2);
+	IODIR0|=(0x01<<3);
+	IODIR0|=(0x01<<4);
+	IODIR0|=(0x01<<5);
+	IODIR0|=(0x01<<6);
+	IODIR0|=(0x01<<7);
+	
+	IODIR0|=(0x01<<9);
+	IODIR0|=(0x01<<10);
+	IODIR0|=(0x01<<11);
+	IODIR0|=(0x01<<12);
+	IODIR0|=(0x01<<13);
+	IODIR0|=(0x01<<14);
+	IODIR0|=(0x01<<15);
+	
+	
+	while(1)
+	{
+		IOCLR0|=(0x01<<1);
+		IOCLR0|=(0x01<<2);
+		IOCLR0|=(0x01<<3);
+		IOCLR0|=(0x01<<4);
+		IOCLR0|=(0x01<<5);
+		IOCLR0|=(0x01<<6);
+		IOCLR0|=(0x01<<7);
+		IOCLR0|=(0x01<<9);
+		IOCLR0|=(0x01<<10);
+		IOCLR0|=(0x01<<11);
+		IOCLR0|=(0x01<<12);
+		IOCLR0|=(0x01<<13);
+		IOCLR0|=(0x01<<14);
+		IOCLR0|=(0x01<<15);
+		//0 0
+		IOSET0|=(0x01<<1);
+		IOSET0|=(0x01<<2);
+		IOSET0|=(0x01<<3);
+		IOSET0|=(0x01<<4);
+		IOSET0|=(0x01<<5);
+		IOSET0|=(0x01<<6);
+		IOCLR0|=(0x01<<7);
+		IOSET0|=(0x01<<9);
+		IOSET0|=(0x01<<10);
+		IOSET0|=(0x01<<11);
+		IOSET0|=(0x01<<12);
+		IOSET0|=(0x01<<13);
+		IOSET0|=(0x01<<14);
+		IOCLR0|=(0x01<<15);
+		delay(300000);
+		IOCLR0|=(0x01<<1);
+		IOCLR0|=(0x01<<2);
+		IOCLR0|=(0x01<<3);
+		IOCLR0|=(0x01<<4);
+		IOCLR0|=(0x01<<5);
+		IOCLR0|=(0x01<<6);
+		IOCLR0|=(0x01<<7);
+		IOCLR0|=(0x01<<9);
+		IOCLR0|=(0x01<<10);
+		IOCLR0|=(0x01<<11);
+		IOCLR0|=(0x01<<12);
+		IOCLR0|=(0x01<<13);
+		IOCLR0|=(0x01<<14);
+		IOCLR0|=(0x01<<15);
+		delay(30000);
+		
+		//0 1
+		IOSET0|=(0x01<<1);
+		IOSET0|=(0x01<<2);
+		IOSET0|=(0x01<<3);
+		IOSET0|=(0x01<<4);
+		IOSET0|=(0x01<<5);
+		IOSET0|=(0x01<<6);
+		IOCLR0|=(0x01<<7);
+		IOCLR0|=(0x01<<9);
+		IOSET0|=(0x01<<10);
+		IOSET0|=(0x01<<11);
+		IOCLR0|=(0x01<<12);
+		IOCLR0|=(0x01<<13);
+		IOCLR0|=(0x01<<14);
+		IOCLR0|=(0x01<<15);
+		delay(300000);
+		IOCLR0|=(0x01<<1);
+		IOCLR0|=(0x01<<2);
+		IOCLR0|=(0x01<<3);
+		IOCLR0|=(0x01<<4);
+		IOCLR0|=(0x01<<5);
+		IOCLR0|=(0x01<<6);
+		IOCLR0|=(0x01<<7);
+		IOCLR0|=(0x01<<9);
+		IOCLR0|=(0x01<<10);
+		IOCLR0|=(0x01<<11);
+		IOCLR0|=(0x01<<12);
+		IOCLR0|=(0x01<<13);
+		IOCLR0|=(0x01<<14);
+		IOCLR0|=(0x01<<15);
+		delay(30000);
+		
+		//1 0
+		IOCLR0|=(0x01<<1);
+		IOSET0|=(0x01<<2);
+		IOSET0|=(0x01<<3);
+		IOCLR0|=(0x01<<4);
+		IOCLR0|=(0x01<<5);
+		IOCLR0|=(0x01<<6);
+		IOCLR0|=(0x01<<7);
+		IOSET0|=(0x01<<9);
+		IOSET0|=(0x01<<10);
+		IOSET0|=(0x01<<11);
+		IOSET0|=(0x01<<12);
+		IOSET0|=(0x01<<13);
+		IOSET0|=(0x01<<14);
+		IOCLR0|=(0x01<<15);
+		delay(300000);
+		IOCLR0|=(0x01<<1);
+		IOCLR0|=(0x01<<2);
+		IOCLR0|=(0x01<<3);
+		IOCLR0|=(0x01<<4);
+		IOCLR0|=(0x01<<5);
+		IOCLR0|=(0x01<<6);
+		IOCLR0|=(0x01<<7);
+		IOCLR0|=(0x01<<9);
+		IOCLR0|=(0x01<<10);
+		IOCLR0|=(0x01<<11);
+		IOCLR0|=(0x01<<12);
+		IOCLR0|=(0x01<<13);
+		IOCLR0|=(0x01<<14);
+		IOCLR0|=(0x01<<15);
+		delay(30000);
+		
+		//1 1
+		IOCLR0|=(0x01<<1);
+		IOSET0|=(0x01<<2);
+		IOSET0|=(0x01<<3);
+		IOCLR0|=(0x01<<4);
+		IOCLR0|=(0x01<<5);
+		IOCLR0|=(0x01<<6);
+		IOCLR0|=(0x01<<7);
+		IOCLR0|=(0x01<<9);
+		IOSET0|=(0x01<<10);
+		IOSET0|=(0x01<<11);
+		IOCLR0|=(0x01<<12);
+		IOCLR0|=(0x01<<13);
+		IOCLR0|=(0x01<<14);
+		IOCLR0|=(0x01<<15);
+		delay(300000);
+		IOCLR0|=(0x01<<1);
+		IOCLR0|=(0x01<<2);
+		IOCLR0|=(0x01<<3);
+		IOCLR0|=(0x01<<4);
+		IOCLR0|=(0x01<<5);
+		IOCLR0|=(0x01<<6);
+		IOCLR0|=(0x01<<7);
+		IOCLR0|=(0x01<<9);
+		IOCLR0|=(0x01<<10);
+		IOCLR0|=(0x01<<11);
+		IOCLR0|=(0x01<<12);
+		IOCLR0|=(0x01<<13);
+		IOCLR0|=(0x01<<14);
+		IOCLR0|=(0x01<<15);
+		delay(30000);
+		
+	}
+}
+}
+void delay(unsigned int count)
+{
+	unsigned int i;
+	for(i=0;i<count;i++);
+}
